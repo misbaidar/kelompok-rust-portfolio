@@ -15,9 +15,11 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",
     "gh-pages": "^6.3.0",
+    "motion": "^12.23.16",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "tailwindcss": "^4.1.13"
+    "tailwindcss": "^4.1.13",
+    "vite-plugin-svgr": "^4.5.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.35.0",
