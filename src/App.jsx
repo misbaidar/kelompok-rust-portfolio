@@ -350,16 +350,16 @@ const openModalMonitor = (event) => {
         </motion.div>
         <div className="flex flex-col items-center" style={{ fontFamily: "Clarendon, serif" }}>
           {/* Mentor Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
-          viewport={{ once: true }}
-        >
-          <header>
-            <h3 className="text-2xl text-center mb-5">Mentor</h3>
-          </header>
-        </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            viewport={{ once: true }}
+          >
+            <header>
+              <h3 className="text-2xl text-center mb-5">Mentor</h3>
+            </header>
+          </motion.div>
           <div className="relative flex items-center justify-center mb-8">
             <motion.div
               key={0}
@@ -379,7 +379,7 @@ const openModalMonitor = (event) => {
                 <img
                   src={members[0].photo}
                   alt={members[0].nama}
-                  className="bg-red-600 w-24 h-24 rounded-full object-cover"
+                  className="bg-gray-600 w-24 h-24 rounded-full object-cover"
                 />
               </div>
               <h3>{members[0].nama}</h3>
@@ -418,7 +418,7 @@ const openModalMonitor = (event) => {
                   <img
                     src={m.photo}
                     alt={m.nama}
-                    className="bg-red-600 w-24 h-24 mx-auto rounded-full object-cover"
+                    className="bg-gray-600 w-24 h-24 mx-auto rounded-full object-cover"
                   />
                 </div>
                 <h3>{m.nama}</h3>
@@ -463,7 +463,7 @@ const openModalMonitor = (event) => {
                       <img
                         src={members[selectedIndex].photo}
                         alt={members[selectedIndex].nama}
-                        className="bg-red-600 w-32 h-32 mx-auto rounded-full object-cover"
+                        className="bg-gray-600 w-32 h-32 mx-auto rounded-full object-cover"
                       />
                     </div>
                     <div>
@@ -598,7 +598,7 @@ const openModalMonitor = (event) => {
                           : "bg-gray-200 text-black"
                       }`}
                     >
-                      Subject {idx + 1}
+                      Materi {idx + 1}
                     </button>
                   ))}
                 </div>
