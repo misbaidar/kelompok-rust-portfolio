@@ -94,7 +94,7 @@ const variants = {
       nama: "Mentor 1",
       nim: "123456789",
       motto: "Belajar tanpa henti.",
-      tujuan: "Menyelesaikan 5 proyek dalam 1 tahun.",
+      tujuan: "Menyelesaikan 2 proyek dalam 1 tahun.",
       photo: "/assets/members/member1.jpg",
     },
     {
