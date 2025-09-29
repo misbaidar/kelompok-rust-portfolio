@@ -8,6 +8,7 @@ import graydonHoare from './assets/graydon_hoare.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import photoFazan from "./assets/members/fazan.jpg";
 import photoMisbah from "./assets/members/misbah.jpg";
 import img1 from "./assets/images/1.jpg";
 import img2 from "./assets/images/2.png";
@@ -140,11 +141,11 @@ const variants = {
     },
     {
       id: "#L6",
-      nama: "Member 6",
-      nim: "987654321",
-      motto: "Hidup sederhana.",
+      nama: "Fazan Muhammad Al-Habsyi",
+      nim: "1257050026",
+      motto: "Teruskan apa yang sudah kau mulai.",
       tujuan: "Menguasai front-end development.",
-      photo: "/assets/members/member2.jpg",
+      photo: photoFazan,
     },
     {
       id: "#L7",
