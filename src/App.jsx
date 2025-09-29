@@ -1,4 +1,4 @@
-import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
+import { motion as Motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
 import { useState, useRef } from "react";
 import rLogo from './assets/r_logo_white.svg';
 import gearLogo from './assets/gear_white.svg';
@@ -8,6 +8,7 @@ import graydonHoare from './assets/graydon_hoare.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import photoMisbah from "./assets/members/misbah.jpg";
 import img1 from "./assets/images/1.jpg";
 import img2 from "./assets/images/2.png";
 import img3 from "./assets/images/3.jpg";
@@ -30,13 +31,13 @@ function GearDivider() {
 
   return (
     <div ref={ref} className="relative flex justify-between items-center">
-      <motion.img
+      <Motion.img
         src={gearLogo}
         alt="Gear Left"
         className="absolute -right-55 w-sm"
         style={{ rotate: rotateLeft }}
       />
-      <motion.img
+      <Motion.img
         src={gearLogo}
         alt="Gear Right"
         className="absolute -left-55 w-sm"
@@ -163,11 +164,11 @@ const variants = {
     },
     {
       id: "#L9",
-      nama: "Member 9",
-      nim: "987654321",
-      motto: "Hidup sederhana.",
-      tujuan: "Menguasai front-end development.",
-      photo: "/assets/members/member2.jpg",
+      nama: "Misbah Haidar Basyir",
+      nim: "1257050039",
+      motto: "Isshokenmei Ikiteru",
+      tujuan: "Aku akan menentukan minat aku antara front-end, back-end, atau full-stack dalam website development dengan membuat atau terlibat dalam 5 projek pengembangan web sederhana dalam 1 tahun",
+      photo: photoMisbah,
     },
     {
       id: "#L10",
@@ -261,7 +262,7 @@ const openModalMonitor = (event) => {
   return (
     <div className="bg-black text-white overflow-hidden scroll-smooth">
       <section className="h-screen flex flex-col gap-12 items-center justify-center">
-        <motion.div
+        <Motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -270,11 +271,11 @@ const openModalMonitor = (event) => {
           >
             <img src={rLogo} alt="Rust Logo" className="absolute right-[33px] w-50" />
             <img src={gearLogo} alt="Rust Logo" className="animate-spin [animation-duration:18s] w-68" />
-        </motion.div>
+        </Motion.div>
         <div>
           <h1 className="max-w-5xl text-5xl text-center font-egiziano">
             {letters.map((char, i) => (
-              <motion.span
+              <Motion.span
                 key={i}
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -282,7 +283,7 @@ const openModalMonitor = (event) => {
                 transition={{ delay: i * 0.05, duration: 0.0001 }}
               >
                 {char}
-              </motion.span>
+              </Motion.span>
             ))}
           </h1>
         </div>
@@ -291,7 +292,7 @@ const openModalMonitor = (event) => {
       <GearDivider />
 
       <section className="min-h-screen flex flex-col items-center justify-center px-6">
-        <motion.article
+        <Motion.article
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
@@ -332,13 +333,13 @@ const openModalMonitor = (event) => {
               komunitas pengembang yang terus berkembang.
             </p>
           </div>
-        </motion.article>
+        </Motion.article>
       </section>
 
       <GearDivider />
 
       <section className="min-h-screen px-6 pt-30 pb-50">
-        <motion.div
+        <Motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
@@ -347,10 +348,10 @@ const openModalMonitor = (event) => {
           <header>
             <h2 className="text-3xl text-center mb-10">Profil Kelompok</h2>
           </header>
-        </motion.div>
+        </Motion.div>
         <div className="flex flex-col items-center" style={{ fontFamily: "Clarendon, serif" }}>
           {/* Mentor Section */}
-          <motion.div
+          <Motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
@@ -359,9 +360,9 @@ const openModalMonitor = (event) => {
             <header>
               <h3 className="text-2xl text-center mb-5">Mentor</h3>
             </header>
-          </motion.div>
+          </Motion.div>
           <div className="relative flex items-center justify-center mb-8">
-            <motion.div
+            <Motion.div
               key={0}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -384,11 +385,11 @@ const openModalMonitor = (event) => {
               </div>
               <h3>{members[0].nama}</h3>
               <p className="text-gray-400">{members[0].id}</p>
-            </motion.div>
+            </Motion.div>
           </div>
 
           {/* Anggota Section */}
-          <motion.div
+          <Motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
@@ -397,10 +398,10 @@ const openModalMonitor = (event) => {
             <header>
               <h3 className="text-2xl text-center mb-5">Anggota</h3>
             </header>
-          </motion.div>
+          </Motion.div>
           <div className="min-w-5xl grid grid-cols-5 gap-6">
             {members.slice(1).map((m, i) => (
-              <motion.div
+              <Motion.div
                 key={i + 1}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -423,7 +424,7 @@ const openModalMonitor = (event) => {
                 </div>
                 <h3>{m.nama}</h3>
                 <p className="text-gray-400">{m.id}</p>
-              </motion.div>
+              </Motion.div>
             ))}
           </div>
         </div>
@@ -431,7 +432,7 @@ const openModalMonitor = (event) => {
         {/* Modal */}
         <AnimatePresence>
           {selectedIndex !== null && (
-            <motion.div
+            <Motion.div
               key="backdrop"
               className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50"
               initial={{ opacity: 0 }}
@@ -440,7 +441,7 @@ const openModalMonitor = (event) => {
               onClick={closeModal}
             >
               <AnimatePresence mode="wait" custom={direction}>
-                <motion.div
+                <Motion.div
                   key={selectedIndex}
                   className="bg-white text-black rounded-lg p-10 w-2xl relative"
                   custom={direction}
@@ -503,9 +504,9 @@ const openModalMonitor = (event) => {
                       </button>
                     </div>
                   </div>
-                </motion.div>
+                </Motion.div>
               </AnimatePresence>
-            </motion.div>
+            </Motion.div>
           )}
         </AnimatePresence>
       </section>
@@ -513,7 +514,7 @@ const openModalMonitor = (event) => {
       <GearDivider />
       
       <section className="min-h-screen flex flex-col items-center justify-center px-6 py-12"> 
-        <motion.div
+        <Motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
@@ -522,10 +523,10 @@ const openModalMonitor = (event) => {
           <header>
             <h2 className="text-3xl text-center mb-6">Monitor 2k25</h2>
           </header>
-        </motion.div>
+        </Motion.div>
         <div className="relative pl-6">
           {timeline.map((item, i) => (
-            <motion.div
+            <Motion.div
               key={i}
               initial={{ opacity: 0, y: -50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -539,7 +540,7 @@ const openModalMonitor = (event) => {
             >
               {/* Vertical line with grow animation */}
               {i < timeline.length - 1 && (
-                <motion.div
+                <Motion.div
                   initial={{ scaleY: 0 }}
                   whileInView={{ scaleY: 1 }}
                   transition={{ duration: 0.6, delay: i * 0.5 }}
@@ -550,7 +551,7 @@ const openModalMonitor = (event) => {
                         ? "bg-white"
                         : "border-l-2 border-dashed border-white"
                     }`}
-                ></motion.div>
+                ></Motion.div>
               )}
 
               {/* Circle */}
@@ -563,12 +564,12 @@ const openModalMonitor = (event) => {
                 <div className="text-xl">{item.event}</div>
                 <p className="text-sm">{item.date}</p>
               </div>
-            </motion.div>
+            </Motion.div>
           ))}
         </div>
         <AnimatePresence>
           {selectedEvent && (
-            <motion.div
+            <Motion.div
               className="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -576,7 +577,7 @@ const openModalMonitor = (event) => {
               onClick={() => setSelectedEvent(null)}
               style={{ fontFamily: "Clarendon, serif" }}
             >
-              <motion.div
+              <Motion.div
                 className="bg-white text-black rounded-lg p-8 w-[700px] min-h-screen overflow-x-hidden overflow-y-auto relative"
                 initial={{ scale: 0.9, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
@@ -604,7 +605,7 @@ const openModalMonitor = (event) => {
                 </div>
                 {/* Subject page */}
                 {selectedEvent.subjects && selectedEvent.subjects.length > 0 && (
-                  <motion.div
+                  <Motion.div
                     key={subjectIndex} // 🔑 to re-trigger animation
                     initial={{ x: 100, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
@@ -625,10 +626,10 @@ const openModalMonitor = (event) => {
                     <p className="mb-4">
                       {selectedEvent.subjects[subjectIndex].summary}
                     </p>
-                  </motion.div>
+                  </Motion.div>
                 )}
-              </motion.div>
-            </motion.div>
+              </Motion.div>
+            </Motion.div>
           )}
         </AnimatePresence>
       </section>
@@ -636,7 +637,7 @@ const openModalMonitor = (event) => {
       <GearDivider />
 
       <section className="min-h-screen flex flex-col items-center justify-center px-6 mb-20">
-        <motion.div
+        <Motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
@@ -644,11 +645,11 @@ const openModalMonitor = (event) => {
           <header>
             <h2 className="text-3xl text-center mb-6">Galeri</h2>
           </header>
-        </motion.div>
+        </Motion.div>
 
         {/* Grid of photos */}
         <div className="flex justify-center columns-4 gap-4 mt-8">
-          <motion.div
+          <Motion.div
             variants={container}
             initial="hidden"
             whileInView="show"
@@ -656,27 +657,27 @@ const openModalMonitor = (event) => {
             className="columns-4 gap-4"
           >
             {photos.map((p) => (
-              <motion.div
+              <Motion.div
                 key={p.id}
                 layoutId={`photo-${p.id}`}
                 variants={item}
                 onClick={() => setSelected(p)}
                 className="mb-4 cursor-pointer break-inside-avoid"
               >
-                <motion.img
+                <Motion.img
                   src={p.src}
                   alt=""
                   className="w-60 h-auto rounded-md"
                 />
-              </motion.div>
+              </Motion.div>
             ))}
-          </motion.div>
+          </Motion.div>
         </div>
         
         {/* Modal */}
         <AnimatePresence>
           {selected && (
-            <motion.div
+            <Motion.div
               className="fixed inset-0 backdrop-blur-sm flex items-center justify-center z-50"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -686,17 +687,17 @@ const openModalMonitor = (event) => {
               }}
               onClick={() => setSelected(null)}
             >
-              <motion.div
+              <Motion.div
                 layoutId={`photo-${selected.id}`}
                 className="relative rounded-lg overflow-hidden"
                 onClick={(e) => e.stopPropagation()} // prevent close when clicking inside
               >
-                <motion.img
+                <Motion.img
                   src={selected.src}
                   alt={selected.caption}
                   className="max-h-[80vh] max-w-3xl"
                 />
-                <motion.div
+                <Motion.div
                   initial={{ clipPath: "inset(100% 0% 0%)" }}
                   animate={{ clipPath: "inset(0% 0% 0% 0%)" }}
                   exit={{ clipPath: "inset(100% 0% 0% 0%)" }}
@@ -704,9 +705,9 @@ const openModalMonitor = (event) => {
                   className="absolute w-full bottom-0 bg-black/60 text-center text-white"
                 >
                   <div className="p-4" style={{ fontFamily: "Clarendon, serif" }}>{selected.caption}</div>
-                </motion.div>
-              </motion.div>
-            </motion.div>
+                </Motion.div>
+              </Motion.div>
+            </Motion.div>
           )}
         </AnimatePresence>
       </section>
