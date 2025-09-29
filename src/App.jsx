@@ -125,10 +125,10 @@ const variants = {
     },
     {
       id: "#L4",
-      nama: "Member 4",
-      nim: "987654321",
-      motto: "Hidup sederhana.",
-      tujuan: "Menguasai front-end development.",
+      nama: "Shafira Adrani Qisti",
+      nim: "1257050002",
+      motto: "don't say you can't before you try",
+      tujuan: "-",
       photo: "/assets/members/member2.jpg",
     },
     {
