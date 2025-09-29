@@ -8,6 +8,7 @@ import graydonHoare from './assets/graydon_hoare.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import photoShafira from "./assets/members/shafira.png";
 import photoFazan from "./assets/members/fazan.jpg";
 import photoMisbah from "./assets/members/misbah.jpg";
 import img1 from "./assets/images/1.jpg";
@@ -129,7 +130,7 @@ const variants = {
       nim: "1257050002",
       motto: "don't say you can't before you try",
       tujuan: "-",
-      photo: "/assets/members/member2.jpg",
+      photo: photoShafira,
     },
     {
       id: "#L5",
