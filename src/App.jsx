@@ -144,7 +144,7 @@ const variants = {
       nama: "Fazan Muhammad Al-Habsyi",
       nim: "1257050026",
       motto: "Teruskan apa yang sudah kau mulai.",
-      tujuan: "Menguasai front-end development.",
+      tujuan: "-",
       photo: photoFazan,
     },
     {
@@ -339,7 +339,8 @@ const openModalMonitor = (event) => {
 
       <GearDivider />
 
-      <section className="min-h-screen px-6 pt-30 pb-50">
+      <section className="min-h-screen px-6 pt-30 pb-50"
+              style={{ fontFamily: "Clarendon, serif" }}>
         <Motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -400,7 +401,7 @@ const openModalMonitor = (event) => {
               <h3 className="text-2xl text-center mb-5">Anggota</h3>
             </header>
           </Motion.div>
-          <div className="min-w-5xl grid grid-cols-5 gap-6">
+          <div className="max-w-5xl grid grid-cols-5 gap-6">
             {members.slice(1).map((m, i) => (
               <Motion.div
                 key={i + 1}
