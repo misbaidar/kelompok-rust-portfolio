@@ -102,10 +102,10 @@ const variants = {
     },
     {
       id: "#L1",
-      nama: "Member 1",
-      nim: "123456789",
-      motto: "Belajar tanpa henti.",
-      tujuan: "Menyelesaikan 5 proyek dalam 1 tahun.",
+      nama: "hsuhdegy",
+      nim: "jdxjbdjbdw",
+      motto: "gahshsjd",
+      tujuan: "hshhsjjs",
       photo: "/assets/members/member1.jpg",
     },
     {
@@ -118,9 +118,9 @@ const variants = {
     },
     {
       id: "#L3",
-      nama: "Member 3",
-      nim: "987654321",
-      motto: "Hidup sederhana.",
+      nama: "Naila Shafwah Ramadhan",
+      nim: "1257050054",
+      motto: "Setiap ada kesulitan pasti ada kemudahan.",
       tujuan: "Menguasai front-end development.",
       photo: "/assets/members/member2.jpg",
     },
