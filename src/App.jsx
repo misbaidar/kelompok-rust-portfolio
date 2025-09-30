@@ -8,6 +8,7 @@ import graydonHoare from './assets/graydon_hoare.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import photoIbham from "./assets/members/ibham.jpg";
 import photoShafira from "./assets/members/shafira.jpg";
 import photoFazan from "./assets/members/fazan.jpg";
 import photoMisbah from "./assets/members/misbah.jpg";
@@ -114,7 +115,7 @@ const variants = {
       nim: "1257050013",
       motto: "Menjadi seperti Kura-kura, pelan tapi pasti.",
       tujuan: "menjadi Fullstack terkhusus dibidang Web Development.",
-      photo: "/assets/members/member2.jpg",
+      photo: "photoIbham",
     },
     {
       id: "#L3",
