@@ -8,6 +8,7 @@ import graydonHoare from './assets/graydon_hoare.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import photoNailaA from "./assets/members/nailaA.jpg";
 import photoIbham from "./assets/members/ibham.jpg";
 import photoShafira from "./assets/members/shafira.jpg";
 import photoFazan from "./assets/members/fazan.jpg";
@@ -103,11 +104,11 @@ const variants = {
     },
     {
       id: "#L1",
-      nama: "hsuhdegy",
-      nim: "jdxjbdjbdw",
-      motto: "gahshsjd",
-      tujuan: "hshhsjjs",
-      photo: "/assets/members/member1.jpg",
+      nama: "Naila Ainun Nisa Suranto",
+      nim: "1257050055",
+      motto: "Gagal lagi, bangkit lagi",
+      tujuan: "Dalam 1 bulan, saya akan membuat 1 halaman web sederhana tentang biodata dengan HTML dan CSS, lalu menambahkan 1 elemen baru setiap minggu",
+      photo: photoNailaA,
     },
     {
       id: "#L2",
