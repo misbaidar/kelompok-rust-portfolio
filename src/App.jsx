@@ -107,7 +107,7 @@ const variants = {
       nama: "Naila Ainun Nisa Suranto",
       nim: "1257050055",
       motto: "Gagal lagi, bangkit lagi",
-      tujuan: "Dalam 1 bulan, saya akan membuat 1 halaman web sederhana tentang biodata dengan HTML dan CSS, lalu menambahkan 1 elemen baru setiap minggu",
+      tujuan: "Dalam 1 bulan, saya akan membuat 1 halaman web sederhana tentang biodata dengan HTML dan CSS, lalu menambahkan 1 elemen baru setiap minggu.",
       photo: photoNailaA,
     },
     {
