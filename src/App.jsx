@@ -8,6 +8,7 @@ import graydonHoare from './assets/graydon_hoare.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import photoAhsan from "./assets/members/ahsan.jpg";
 import photoNailaA from "./assets/members/nailaA.jpg";
 import photoIbham from "./assets/members/ibham.jpg";
 import photoShafira from "./assets/members/shafira.jpg";
@@ -176,11 +177,11 @@ const variants = {
     },
     {
       id: "#L10",
-      nama: "Member 10",
-      nim: "987654321",
-      motto: "Hidup sederhana.",
-      tujuan: "Menguasai front-end development.",
-      photo: "/assets/members/member2.jpg",
+      nama: "Ahsan Arrizqi",
+      nim: "1257050047",
+      motto: "Setiap Pilihan Ada Konsekuensinya",
+      tujuan: "Selama semester pertama, saya ingin meningkatkan skill coding lewat 2 program pembelajaran mandiri, melatih public speaking dengan 3 presentasi tanpa baca teks, menjaga prinsip lewat 1 komunitas positif, serta membangun 2 kebiasaan sehat untuk mengelola stres.",
+      photo: photoAhsan,
     },
   ];
 
