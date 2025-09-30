@@ -176,10 +176,10 @@ const variants = {
     },
     {
       id: "#L10",
-      nama: "Member 10",
-      nim: "987654321",
-      motto: "Hidup sederhana.",
-      tujuan: "Menguasai front-end development.",
+      nama: "Ahsan Arrizqi",
+      nim: "1257050047",
+      motto: "Setiap Pilihan Ada Konsekuensinya",
+      tujuan: "Selama semester pertama, saya ingin meningkatkan skill coding lewat 2 program pembelajaran mandiri, melatih public speaking dengan 3 presentasi tanpa baca teks, menjaga prinsip lewat 1 komunitas positif, serta membangun 2 kebiasaan sehat untuk mengelola stres.",
       photo: "/assets/members/member2.jpg",
     },
   ];
