@@ -8,6 +8,7 @@ import graydonHoare from './assets/graydon_hoare.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import photoIbham from "./assets/members/ibham.jpg";
 import photoShafira from "./assets/members/shafira.jpg";
 import photoFazan from "./assets/members/fazan.jpg";
 import photoMisbah from "./assets/members/misbah.jpg";
