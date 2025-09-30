@@ -110,10 +110,10 @@ const variants = {
     },
     {
       id: "#L2",
-      nama: "Member 2",
-      nim: "987654321",
-      motto: "Hidup sederhana.",
-      tujuan: "Menguasai front-end development.",
+      nama: "Ibham Wiradinata",
+      nim: "1257050013",
+      motto: "Menjadi seperti Kura-kura, pelan tapi pasti.",
+      tujuan: "menjadi Fullstack terkhusus dibidang Web Development.",
       photo: "/assets/members/member2.jpg",
     },
     {
