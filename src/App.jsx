@@ -8,7 +8,7 @@ import graydonHoare from './assets/graydon_hoare.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
-import photoShafira from "./assets/members/shafira.png";
+import photoShafira from "./assets/members/shafira.jpg";
 import photoFazan from "./assets/members/fazan.jpg";
 import photoMisbah from "./assets/members/misbah.jpg";
 import img1 from "./assets/images/1.jpg";
@@ -169,7 +169,7 @@ const variants = {
       nama: "Misbah Haidar Basyir",
       nim: "1257050039",
       motto: "Isshokenmei Ikiteru",
-      tujuan: "Aku akan menentukan minat aku antara front-end, back-end, atau full-stack dalam website development dengan membuat atau terlibat dalam 5 projek pengembangan web sederhana dalam 1 tahun",
+      tujuan: "Aku akan menentukan minatku apakah di front-end, back-end, atau full-stack dalam bidang website development dengan membuat atau terlibat dalam 5 projek pengembangan web sederhana dalam 1 tahun",
       photo: photoMisbah,
     },
     {
@@ -216,8 +216,20 @@ const variants = {
         }
       ]
     },
-    { date: "27 September", event: "Mabim 2", status: "in-progress" },
-    { date: "4 Oktober", event: "Mabim 3", status: "incoming" },
+    {
+      date: "27 September",
+      event: "Mabim 2",
+      status: "completed",
+      subjects: [
+        {
+          title: "Materi Kepemimpinan",
+          presenter: "Pak C",
+          summary: "Peserta diperkenalkan pada dasar-dasar kepemimpinan...",
+          photo: "/photos/kepemimpinan.jpg"
+        }
+      ]
+    },
+    { date: "4 Oktober", event: "Mabim 3", status: "in-progress" },
     { date: "5 Oktober", event: "Mabim 4", status: "incoming" },
     { date: "9-11 Oktober", event: "PDO", status: "incoming" }
   ];
@@ -340,8 +352,7 @@ const openModalMonitor = (event) => {
 
       <GearDivider />
 
-      <section className="min-h-screen px-6 pt-30 pb-50"
-              style={{ fontFamily: "Clarendon, serif" }}>
+      <section className="min-h-screen px-6 pt-30 pb-50">
         <Motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -441,7 +452,8 @@ const openModalMonitor = (event) => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              onClick={closeModal}
+              onClick={closeModal} 
+              style={{ fontFamily: "Clarendon, serif" }}
             >
               <AnimatePresence mode="wait" custom={direction}>
                 <Motion.div
