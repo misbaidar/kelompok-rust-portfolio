@@ -115,7 +115,7 @@ const variants = {
       nim: "1257050013",
       motto: "Menjadi seperti Kura-kura, pelan tapi pasti.",
       tujuan: "menjadi Fullstack terkhusus dibidang Web Development.",
-      photo: "/assets/members/member2.jpg",
+      photo: "photoIbham",
     },
     {
       id: "#L3",
