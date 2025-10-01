@@ -124,7 +124,7 @@ const variants = {
       nama: "Naila Shafwah Ramadhan",
       nim: "1257050054",
       motto: "Setiap ada kesulitan pasti ada kemudahan.",
-      tujuan: "Menguasai front-end development.",
+      tujuan: "Dalam 3 tahun ini, saya akan membuat halaman web tentang portofolio saya pribadi dan akan terus diupdate dengan project-project mendatang.",
       photo: "/assets/members/member2.jpg",
     },
     {
