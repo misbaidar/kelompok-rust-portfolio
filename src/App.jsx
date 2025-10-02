@@ -8,8 +8,9 @@ import graydonHoare from './assets/graydon_hoare.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
-import photoNailaS from "./assets/members/nailaS.jpg";
 import photoAhsan from "./assets/members/ahsan.jpg";
+import photoFathur from "./assets/members/fathur.jpg";
+import photoNailaS from "./assets/members/nailaS.jpg";
 import photoNailaA from "./assets/members/nailaA.jpg";
 import photoIbham from "./assets/members/ibham.jpg";
 import photoShafira from "./assets/members/shafira.jpg";
@@ -135,7 +136,7 @@ const variants = {
       nama: "Naila Shafwah Ramadhan",
       nim: "1257050054",
       motto: "Setiap ada kesulitan pasti ada kemudahan.",
-      tujuan: "Saya ingin mengikuti AISEEC dan menerapkan SDGs sebagai next project untuk web saya dalam kurun waktu 1 tahun",
+      tujuan: "Dalam 3 tahun ini, saya akan membuat halaman web tentang portofolio saya pribadi dan akan terus diupdate dengan project-project mendatang.",
       photo: photoNailaS,
     },
     {
@@ -172,11 +173,11 @@ const variants = {
     },
     {
       id: "#L8",
-      nama: "Member 8",
-      nim: "987654321",
-      motto: "Hidup sederhana.",
-      tujuan: "Menguasai front-end development.",
-      photo: "/assets/members/member2.jpg",
+      nama: "Fathur Hapiz Zulfikar",
+      nim: "1257050081",
+      motto: "Akan selalu ada dan berliipat ganda.",
+      tujuan: "-",
+      photo: photoFathur,
     },
     {
       id: "#L9",
