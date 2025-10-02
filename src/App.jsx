@@ -16,6 +16,8 @@ import photoIbham from "./assets/members/ibham.jpg";
 import photoShafira from "./assets/members/shafira.jpg";
 import photoFazan from "./assets/members/fazan.jpg";
 import photoMisbah from "./assets/members/misbah.jpg";
+import stadiumGeneral from "./assets/foto_materi/stadium_general.jpg";
+import ekspektasi from "./assets/foto_materi/ekspektasi.jpg";
 import img1 from "./assets/images/1.jpg";
 import img2 from "./assets/images/2.jpg";
 import img3 from "./assets/images/3.jpg";
@@ -205,18 +207,99 @@ const variants = {
       status: "completed",
       subjects: [
         {
-          title: "Sambutan Ketua",
-          presenter: "Bapak A",
-          summary: "Acara dimulai dengan sambutan ketua panitia...",
-          photo: "/photos/sambutan.jpg"
+          title: "Stadium General",
+          presenter: "Dian Sa'adillah Maylawati, S.Kom., M.T., Ph.D.",
+          photo: stadiumGeneral,
+          summary: (
+            <article className="prose prose-invert max-w-none">
+              <h4 className="text-xl font-semibold mb-2">Profil Lulusan</h4>
+              <ul className="list-disc list-inside space-y-1">
+                <li>Menguasai bidang AI dan DC</li>
+                <li>Solusi berdasarkan informatika</li>
+                <li>Keterampilan dalam sosial hingga entrepreneur</li>
+                <li>Pribadi berakhlakul Karimah, kreatif, inovatif</li>
+              </ul>
+
+              <h4 className="text-xl font-semibold mt-6 mb-2">
+                Capaian Pembelajaran Lulusan (CPL)
+              </h4>
+              <ul className="list-disc list-inside space-y-1">
+                <li>Informatika</li>
+                <li>AI</li>
+                <li>Beradaptasi dengan metode baru</li>
+                <li>Menyajikan solusi atas permasalahan</li>
+                <li>Mengevaluasi</li>
+                <li>Kolaborasi</li>
+                <li>Komunikasi</li>
+                <li>Komitmen Islam sebagai landasan hidup</li>
+                <li>Jiwa pembelajar sepanjang hayat</li>
+              </ul>
+
+              <h4 className="text-xl font-semibold mt-6 mb-2">Kurikulum</h4>
+              <p className="leading-relaxed">
+                63 Mata Kuliah (51 teori + 12 praktikum), total{" "}
+                <strong className="">147 SKS</strong>. <br />
+                Asesmen berbasis{" "}
+                <span className="font-medium italic">
+                  OBE (Outcome Based Education)
+                </span>
+                .
+              </p>
+
+              <h4 className="text-xl font-semibold mt-6 mb-2">Jurusan</h4>
+              <p className="leading-relaxed">
+                Informatika dibagi menjadi 2 jurusan:{" "}
+                <span className="font-semibold ">
+                  AI (Artificial Intelligence)
+                </span>{" "}
+                dan{" "}
+                <span className="font-semibold ">
+                  DC (Distributed Computing)
+                </span>
+                .
+              </p>
+            </article>
+          ),
         },
         {
-          title: "Motivasi Mahasiswa",
-          presenter: "Ibu B",
-          summary: "Memberikan motivasi kepada mahasiswa baru...",
-          photo: "/photos/motivasi.jpg"
-        }
-      ]
+          title: "Ekspektasi",
+          presenter: "Diman Fathurrahman",
+          photo: ekspektasi,
+          summary: (
+            <article className="prose prose-invert max-w-none">
+              <p className="leading-relaxed">
+                Ekspektasi adalah sesuatu yang kita inginkan di masa depan yang
+                bisa kita dapatkan dari proses yang dimulai setelah dibuatnya
+                ekspektasi.
+              </p>
+              <p className="leading-relaxed">
+                Memiliki 2 tipe:
+                realistis dan
+                tidak realistis.
+              </p>
+
+              <h5 className="text-lg font-semibold mt-6 mb-2">
+                Ekspektasi MONITOR 2025:
+              </h5>
+              <ol className="list-decimal list-inside space-y-1">
+                <li>Mandiri</li>
+                <li>Efektif</li>
+                <li>Bertanggung jawab</li>
+                <li>Solutif</li>
+                <li>Leadership</li>
+                <li>Percaya diri</li>
+                <li>Responsif</li>
+                <li>Kritis</li>
+                <li>
+                  Memahami sistem pembelajaran kampus serta lebih dalam jurusan
+                </li>
+                <li>Disiplin</li>
+                <li>Integritas</li>
+              </ol>
+            </article>
+          ),
+        },
+      ],
     },
     {
       date: "20 September",
@@ -224,12 +307,173 @@ const variants = {
       status: "completed",
       subjects: [
         {
-          title: "Materi Kepemimpinan",
-          presenter: "Pak C",
-          summary: "Peserta diperkenalkan pada dasar-dasar kepemimpinan...",
-          photo: "/photos/kepemimpinan.jpg"
-        }
-      ]
+          title: "Wahyu Memandu Ilmu",
+          presenter: "Dr. Cepy Slamet M.Kom",
+          photo: "wahyu",
+          summary: (
+            <article className="prose max-w-none">
+              <h4 className="text-xl font-semibold mb-2">Wahyu Memandu Ilmu</h4>
+              <ul className="list-disc list-inside space-y-1">
+                <li>
+                  Seluruh gerakan, baik pembelajaran maupun kegiatan di Universitas
+                  Islam Negeri Sunan Gunung Djati Bandung harus berdasarkan Al-Qur'an
+                  (wahyu).
+                </li>
+                <li>
+                  Al-Qur’an sebagai pemandu kita sebagai mahasiswa dalam kehidupan
+                  kampus maupun sehari-hari.
+                </li>
+                <li>
+                  Tuntaskan apa yang sudah kamu mulai sehingga siap menjadi generasi
+                  emas penerus bangsa.
+                </li>
+                <li>
+                  Roda paradigma kesuksesan: <strong>SKS</strong> (Syukur, Komitmen,
+                  Sabar).
+                  <ul className="list-disc list-inside ml-6">
+                    <li>
+                      <strong>Syukur</strong>: rasa terima kasih atas takdir kepada
+                      Sang Pencipta.
+                    </li>
+                    <li>
+                      <strong>Komitmen</strong>: ikatan/ janji untuk melakukan hal
+                      baik secara berkelanjutan.
+                    </li>
+                    <li>
+                      <strong>Sabar</strong>: menahan diri dan mengendalikan emosi.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <h5 className="text-lg font-semibold mt-4 mb-2">Kunci Sukses</h5>
+              <ol className="list-decimal list-inside space-y-1">
+                <li>Pengendalian diri</li>
+                <li>Ketekunan</li>
+                <li>Semangat pantang menyerah</li>
+                <li>Motivasi</li>
+              </ol>
+            </article>
+          ),
+        },
+        {
+          title: "Pengantar Logika",
+          presenter: "Diaz Azkia S.T",
+          photo: "logika",
+          summary: (
+            <article className="prose max-w-none">
+              <h4 className="text-xl font-semibold mb-2">Pengantar Logika</h4>
+              <ul className="list-disc list-inside space-y-1">
+                <li>
+                  <strong>Logika</strong> adalah cara berpikir yang benar dan
+                  sistematis yang dapat digunakan sehari-hari.
+                </li>
+              </ul>
+
+              <h5 className="text-lg font-semibold mt-4 mb-2">Jenis Logika</h5>
+              <ol className="list-decimal list-inside space-y-1">
+                <li>
+                  <strong>Induktif</strong>: dari hal khusus → hal umum
+                </li>
+                <li>
+                  <strong>Deduktif</strong>: dari hal umum → hal khusus
+                </li>
+              </ol>
+
+              <h5 className="text-lg font-semibold mt-4 mb-2">Kesalahan Berpikir</h5>
+              <ol className="list-decimal list-inside space-y-1">
+                <li>Menyerang pribadi, bukan argumen</li>
+                <li>Ikut-ikutan karena mayoritas percaya</li>
+                <li>
+                  Menganggap 2 hal berhubungan sebagai sebab-akibat padahal tidak
+                </li>
+                <li>Menarik kesimpulan umum dari sampel kecil</li>
+              </ol>
+
+              <h5 className="text-lg font-semibold mt-4 mb-2">Sistematis Berpikir</h5>
+              <p className="leading-relaxed">
+                Mendengar → mendengarkan (filter) → mengartikan (kata, kalimat, nada
+                bicara) → berpikir
+              </p>
+            </article>
+          ),
+        },
+        {
+          title: "Keinformatikaan",
+          presenter: "Bidang Nalar (M. Fatih Maulana)",
+          photo: "informatika",
+          summary: (
+            <article className="prose max-w-none">
+              <h4 className="text-xl font-semibold mb-2">Keinformatikaan</h4>
+              <p className="leading-relaxed">
+                Informatika itu luas, bukan hanya satu bidang. Beberapa contoh
+                output akhir:
+              </p>
+              <ol className="list-decimal list-inside space-y-1">
+                <li>
+                  <strong>Software engineer</strong>: membuat, merancang, memelihara
+                  perangkat lunak
+                </li>
+                <li>
+                  <strong>Web development</strong>: membuat website
+                </li>
+                <li>
+                  <strong>Network & cloud</strong>
+                </li>
+                <li>
+                  <strong>AI & data science</strong>: membuat data menjadi insight,
+                  biasanya untuk bisnis
+                </li>
+              </ol>
+
+              <h5 className="text-lg font-semibold mt-4 mb-2">Tantangan</h5>
+              <ol className="list-decimal list-inside space-y-1">
+                <li>Adaptasi kampus</li>
+                <li>Banyak pilihan → bingung</li>
+                <li>
+                  Tekanan sosial (membandingkan diri dengan orang lain)
+                </li>
+                <li>Distraksi dan arah yang belum jelas</li>
+              </ol>
+
+              <h5 className="text-lg font-semibold mt-4 mb-2">
+                Pentingnya Menentukan Tujuan
+              </h5>
+              <ol className="list-decimal list-inside space-y-1">
+                <li>Tanpa tujuan, seperti kapal tanpa arah</li>
+                <li>Tujuan = kompas</li>
+                <li>
+                  Mulai dari sederhana, nanti bisa berkembang seiring waktu
+                </li>
+              </ol>
+
+              <h5 className="text-lg font-semibold mt-4 mb-2">Ikigai</h5>
+              <p className="leading-relaxed">
+                <em>Iki</em> (hidup) + <em>gai</em> (nilai) → ikigai = nilai hidup
+              </p>
+
+              <h5 className="text-lg font-semibold mt-4 mb-2">S.M.A.R.T</h5>
+              <ul className="list-disc list-inside space-y-1">
+                <li>
+                  <strong>S</strong> – Specific (jelas)
+                </li>
+                <li>
+                  <strong>M</strong> – Measurable (bisa diukur)
+                </li>
+                <li>
+                  <strong>A</strong> – Achievable (realistis)
+                </li>
+                <li>
+                  <strong>R</strong> – Relevant (sesuai jurusan/minat)
+                </li>
+                <li>
+                  <strong>T</strong> – Time bound (ada target waktu)
+                </li>
+              </ul>
+            </article>
+          ),
+        },
+      ],
     },
     {
       date: "27 September",
@@ -237,12 +481,141 @@ const variants = {
       status: "completed",
       subjects: [
         {
-          title: "Materi Kepemimpinan",
-          presenter: "Pak C",
-          summary: "Peserta diperkenalkan pada dasar-dasar kepemimpinan...",
-          photo: "/photos/kepemimpinan.jpg"
-        }
-      ]
+          title: "Alur dan Advokasi",
+          presenter: "Ansyarullah S.T",
+          photo: "/photos/kepemimpinan.jpg",
+          summary: (
+            <article className="prose max-w-none">
+              <h4 className="text-xl font-semibold mb-2">Alur dan Advokasi</h4>
+              <p className="leading-relaxed">
+                Advokasi adalah tindakan yang bertujuan agar suara, pendapat, dan
+                aspirasi didengar oleh pihak terkait dan masyarakat luas.
+              </p>
+
+              <h5 className="text-lg font-semibold mt-4 mb-2">Peran Advokasi</h5>
+              <ol className="list-decimal list-inside space-y-1">
+                <li>Penampung aspirasi mahasiswa untuk masyarakat</li>
+                <li>Pengawas kebijakan kampus</li>
+                <li>Mengubah masalah personal menjadi isu kolektif</li>
+                <li>
+                  Menciptakan iklim akademik & non-akademik (di kelas maupun luar
+                  kelas)
+                </li>
+              </ol>
+
+              <h5 className="text-lg font-semibold mt-4 mb-2">Landasan Advokasi</h5>
+              <ol className="list-decimal list-inside space-y-1">
+                <li>Organisasi kemahasiswaan di UMPTKIN</li>
+                <li>Juknis kode etik & tata tertib mahasiswa UIN Bandung</li>
+                <li>Peraturan SENAT Mahasiswa FST</li>
+                <li>Peraturan SEMA FST</li>
+                <li>Himatif</li>
+              </ol>
+
+              <h5 className="text-lg font-semibold mt-4 mb-2">
+                Hak dan Kewajiban Mahasiswa
+              </h5>
+              <ol className="list-decimal list-inside space-y-1">
+                <li>
+                  Organisasi & Advokasi: wadah pengembangan diri, berhak menyampaikan
+                  aspirasi
+                </li>
+                <li>Akademik: memperoleh hak akademik</li>
+              </ol>
+
+              <h5 className="text-lg font-semibold mt-4 mb-2">Jalur Advokasi</h5>
+              <ol className="list-decimal list-inside space-y-1">
+                <li>Internal mahasiswa (kelas, angkatan, mahasiswa lain)</li>
+                <li>
+                  Jurusan: HMJ sebagai jembatan penyampaian aspirasi mahasiswa
+                </li>
+                <li>
+                  Fakultas: DEMA menanggapi D-HMJ dengan program kerja (menampung
+                  masalah & memberi solusi)
+                </li>
+                <li>
+                  DEMA membutuhkan bantuan → melibatkan SENA
+                </li>
+              </ol>
+
+              <h5 className="text-lg font-semibold mt-4 mb-2">Peran ORMAWA</h5>
+              <ol className="list-decimal list-inside space-y-1">
+                <li>Eksekutif (HMJ dan DEMA)</li>
+                <li>Legislatif (SEMA)</li>
+              </ol>
+
+              <h5 className="text-lg font-semibold mt-4 mb-2">
+                Kritis sebagai Identitas Mahasiswa
+              </h5>
+              <ol className="list-decimal list-inside space-y-1">
+                <li>Landasan intelektual</li>
+                <li>Identifikasi kesesuaian</li>
+                <li>Mengetahui peran mahasiswa</li>
+              </ol>
+
+              <h5 className="text-lg font-semibold mt-4 mb-2">
+                Etika Penyampaian Pendapat
+              </h5>
+              <ol className="list-decimal list-inside space-y-1">
+                <li>Basis data</li>
+                <li>Saluran resmi</li>
+                <li>Gunakan bahasa sopan</li>
+                <li>Konsolidasi</li>
+              </ol>
+            </article>
+          ),
+        },
+        {
+          title: "Manajemen Waktu",
+          presenter: "Imam Syaifulmillah S.T",
+          photo: "/photos/kepemimpinan.jpg",
+          summary: (
+            <article className="prose max-w-none">
+              <h4 className="text-xl font-semibold mb-2">Manajemen Waktu</h4>
+              <p className="leading-relaxed">
+                Manajemen waktu adalah merencanakan, mengatur, dan mengendalikan
+                waktu agar digunakan secara efektif dan efisien untuk mencapai
+                tujuan tertentu.
+              </p>
+
+              <h5 className="text-lg font-semibold mt-4 mb-2">Prinsip</h5>
+              <ol className="list-decimal list-inside space-y-1">
+                <li>Menentukan prioritas</li>
+                <li>Membuat batas waktu</li>
+                <li>Tidak menunda-nunda kegiatan</li>
+              </ol>
+
+              <h5 className="text-lg font-semibold mt-4 mb-2">
+                Cara Mengatasi Gangguan
+              </h5>
+              <ol className="list-decimal list-inside space-y-1">
+                <li>Buat timeline keseharian</li>
+                <li>Tidak menunda-nunda</li>
+                <li>List pekerjaan/kegiatan</li>
+              </ol>
+
+              <h5 className="text-lg font-semibold mt-4 mb-2">
+                Pengelolaan Stres
+              </h5>
+              <ol className="list-decimal list-inside space-y-1">
+                <li>Mengendalikan tekanan fisik maupun mental</li>
+                <li>Mengelola waktu dengan baik</li>
+                <li>Istirahat yang cukup</li>
+                <li>Olahraga & relaksasi</li>
+                <li>Manajemen prioritas</li>
+                <li>Cari dukungan sosial</li>
+              </ol>
+
+              <h5 className="text-lg font-semibold mt-4 mb-2">
+                Alat Pengukur & Evaluasi
+              </h5>
+              <p className="leading-relaxed">
+                Mengevaluasikan efektivitas manajemen waktu.
+              </p>
+            </article>
+          ),
+        },
+      ],
     },
     { date: "4 Oktober", event: "Mabim 3", status: "in-progress" },
     { date: "5 Oktober", event: "Mabim 4", status: "incoming" },
@@ -629,7 +1002,7 @@ const openModalMonitor = (event) => {
               style={{ fontFamily: "Clarendon, serif" }}
             >
               <Motion.div
-                className="bg-white text-black rounded-lg p-8 w-[700px] min-h-screen overflow-x-hidden overflow-y-auto relative"
+                className="bg-white text-black rounded-lg p-8 w-[700px] h-screen overflow-x-hidden overflow-y-auto relative"
                 initial={{ scale: 0.9, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0.9, opacity: 0 }}
@@ -663,7 +1036,7 @@ const openModalMonitor = (event) => {
                     exit={{ x: -100, opacity: 0 }}
                     transition={{ duration: 0.4 }}
                   >
-                    <h3 className="text-xl font-bold">
+                    <h3 className="text-2xl font-bold">
                       {selectedEvent.subjects[subjectIndex].title}
                     </h3>
                     <p className="text-gray-600 mb-2">
