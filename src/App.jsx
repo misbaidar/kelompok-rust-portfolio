@@ -8,6 +8,7 @@ import graydonHoare from './assets/graydon_hoare.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import photoJuan from "./assets/members/najwan.jpg";
 import photoWijdan from "./assets/members/wijdan.jpg";
 import photoFathur from "./assets/members/fathur.jpg";
 import photoAhsan from "./assets/members/ahsan.jpg";
@@ -19,6 +20,11 @@ import photoFazan from "./assets/members/fazan.jpg";
 import photoMisbah from "./assets/members/misbah.jpg";
 import stadiumGeneral from "./assets/foto_materi/stadium_general.jpg";
 import ekspektasi from "./assets/foto_materi/ekspektasi.jpg";
+import wahyu from "./assets/foto_materi/wahyu.jpg";
+import logika from "./assets/foto_materi/logika.jpg";
+import informatika from "./assets/foto_materi/informatika.jpg";
+import advokasi from "./assets/foto_materi/advokasi.jpg";
+import waktu from "./assets/foto_materi/waktu.jpg";
 import img1 from "./assets/images/1.jpg";
 import img2 from "./assets/images/2.jpg";
 import img3 from "./assets/images/3.jpg";
@@ -104,7 +110,7 @@ const variants = {
 };
 
   // Simple typewriter effect
-  const text = "Selamat Datang di Portfolio Kelompok Rust";
+  const text = "Selamat Datang di Portofolio Kelompok Rust";
 
   // Split the text into characters
   const letters = text.split("");
@@ -112,11 +118,11 @@ const variants = {
   const members = [
     {
       id: "Mentor",
-      nama: "Mentor 1",
-      nim: "123456789",
-      motto: "Belajar tanpa henti.",
-      tujuan: "Menyelesaikan 2 proyek dalam 1 tahun.",
-      photo: "/assets/members/member1.jpg",
+      nama: "Nazwa Kholifah",
+      nim: "1248050138",
+      motto: "-",
+      tujuan: "-",
+      photo: "photoMentor",
     },
     {
       id: "#L1",
@@ -168,17 +174,17 @@ const variants = {
     },
     {
       id: "#L7",
-      nama: "Member 7",
-      nim: "987654321",
-      motto: "Hidup sederhana.",
-      tujuan: "Menguasai front-end development.",
-      photo: "/assets/members/member2.jpg",
+      nama: "Najwan Fathur Rizky",
+      nim: "1257050093",
+      motto: "Hidup adalah petualangan, yakin pada diri sendiri",
+      tujuan: "-",
+      photo: photoJuan,
     },
     {
       id: "#L8",
       nama: "Fathur Hapiz Zulfikar",
       nim: "1257050081",
-      motto: "Akan selalu ada dan berliipat ganda.",
+      motto: "Akan selalu ada dan berlipat ganda.",
       tujuan: "-",
       photo: photoFathur,
     },
@@ -187,7 +193,7 @@ const variants = {
       nama: "Misbah Haidar Basyir",
       nim: "1257050039",
       motto: "Isshokenmei Ikiteru",
-      tujuan: "Aku akan menentukan minatku apakah di front-end, back-end, atau full-stack dalam bidang website development dengan membuat atau terlibat dalam 5 projek pengembangan web sederhana dalam 1 tahun",
+      tujuan: "Aku akan menentukan minatku pada front-end, back-end, atau full-stack dalam bidang website development dengan membuat atau terlibat dalam 5 projek pengembangan web sederhana dalam 1 tahun",
       photo: photoMisbah,
     },
     {
@@ -310,7 +316,7 @@ const variants = {
         {
           title: "Wahyu Memandu Ilmu",
           presenter: "Dr. Cepy Slamet M.Kom",
-          photo: "wahyu",
+          photo: wahyu,
           summary: (
             <article className="prose max-w-none">
               <h4 className="text-xl font-semibold mb-2">Wahyu Memandu Ilmu</h4>
@@ -360,7 +366,7 @@ const variants = {
         {
           title: "Pengantar Logika",
           presenter: "Diaz Azkia S.T",
-          photo: "logika",
+          photo: logika,
           summary: (
             <article className="prose max-w-none">
               <h4 className="text-xl font-semibold mb-2">Pengantar Logika</h4>
@@ -402,7 +408,7 @@ const variants = {
         {
           title: "Keinformatikaan",
           presenter: "Bidang Nalar (M. Fatih Maulana)",
-          photo: "informatika",
+          photo: informatika,
           summary: (
             <article className="prose max-w-none">
               <h4 className="text-xl font-semibold mb-2">Keinformatikaan</h4>
@@ -484,7 +490,7 @@ const variants = {
         {
           title: "Alur dan Advokasi",
           presenter: "Ansyarullah S.T",
-          photo: "/photos/kepemimpinan.jpg",
+          photo: advokasi,
           summary: (
             <article className="prose max-w-none">
               <h4 className="text-xl font-semibold mb-2">Alur dan Advokasi</h4>
@@ -569,7 +575,7 @@ const variants = {
         {
           title: "Manajemen Waktu",
           presenter: "Imam Syaifulmillah S.T",
-          photo: "/photos/kepemimpinan.jpg",
+          photo: waktu,
           summary: (
             <article className="prose max-w-none">
               <h4 className="text-xl font-semibold mb-2">Manajemen Waktu</h4>
@@ -784,7 +790,7 @@ const openModalMonitor = (event) => {
               className="rounded-md p-4 text-center group cursor-pointer"
               onClick={() => openModal(0)} // 👈 only card is clickable
             >
-              <div className="mb-4">
+              <div className="mb-4 flex justify-center">
                 <img
                   src={gearWhiteTransparent}
                   alt="Gear Right"
@@ -946,7 +952,17 @@ const openModalMonitor = (event) => {
           transition={{ duration: 0.5, ease: "easeInOut" }}
           viewport={{ once: true }}
         >        
-        <p className="text-xl w-xl text-center mb-20" style={{ fontFamily: "Clarendon, serif" }}>"Membentuk mahasiswa Teknik Informatika yang SAKTI dan berdaya saing dalam menjawab distrupsi digital di era society 5.0"</p>
+        <p className="text-xl w-xl text-center mb-8" style={{ fontFamily: "Clarendon, serif" }}>"Membentuk mahasiswa Teknik Informatika yang SAKTI dan berdaya saing dalam menjawab distrupsi digital di era society 5.0"</p>
+        <div className="mb-10 text-center" style={{ fontFamily: "Clarendon, serif" }}>
+          <h4 className="text-lg font-semibold mb-2">Nilai Dasar SAKTI</h4>
+          <ul className="inline-block text-left space-y-1">
+            <li><span className="font-medium">S</span> – Solid</li>
+            <li><span className="font-medium">A</span> – Aktif</li>
+            <li><span className="font-medium">K</span> – Kreatif</li>
+            <li><span className="font-medium">T</span> – Transformatif</li>
+            <li><span className="font-medium">I</span> – Islami</li>
+          </ul>
+        </div>
         </Motion.div>
           <div className="relative pl-6">
             {timeline.map((item, i) => (
