@@ -138,11 +138,11 @@ const variants = {
     },
     {
       id: "#L5",
-      nama: "Member 5",
-      nim: "987654321",
-      motto: "Hidup sederhana.",
-      tujuan: "Menguasai front-end development.",
-      photo: "/assets/members/member2.jpg",
+      nama: "Wijdan Al Shafa Santosa",
+      nim: "1257050088",
+      motto: "Jangan katakan tidak bisa jika tidak mencoba.",
+      tujuan: "-",
+      photo: photoWijdan,
     },
     {
       id: "#L6",
