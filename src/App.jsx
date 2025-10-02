@@ -18,6 +18,7 @@ import photoIbham from "./assets/members/ibham.jpg";
 import photoShafira from "./assets/members/shafira.jpg";
 import photoFazan from "./assets/members/fazan.jpg";
 import photoMisbah from "./assets/members/misbah.jpg";
+import photoNazwa from "./assets/members/nazwa.jpg";
 import stadiumGeneral from "./assets/foto_materi/stadium_general.jpg";
 import ekspektasi from "./assets/foto_materi/ekspektasi.jpg";
 import wahyu from "./assets/foto_materi/wahyu.jpg";
@@ -122,7 +123,7 @@ const variants = {
       nim: "1248050138",
       motto: "-",
       tujuan: "-",
-      photo: "photoMentor",
+      photo: photoNazwa,
     },
     {
       id: "#L1",
@@ -826,9 +827,16 @@ const openModalMonitor = (event) => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 viewport={{ once: true }}
-                className="rounded-md group p-4 text-center cursor-pointer"
+                className="rounded-md group p-4 text-center cursor-pointer relative"
                 onClick={() => openModal(i + 1)}
               >
+                {/* Badge for Ketua */}
+                {m.id === "#L10" && (
+                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 border-1 border-black bg-white text-black text-xs font-bold px-2 py-1 z-10 rounded-full shadow">
+                    Ketua
+                  </span>
+                )}
+
                 <div className="relative flex items-center justify-center mb-4">
                   <img
                     src={gearWhiteTransparent}
@@ -889,19 +897,28 @@ const openModalMonitor = (event) => {
                     </div>
                     <div>
                       <h3 className="text-2xl">{members[selectedIndex].nama}</h3>
-                      <p className="text-gray-600 mb-5">
-                        {members[selectedIndex].id}
-                      </p>
+                      <p className="text-gray-600 mb-5">{members[selectedIndex].id}</p>
                       <h3 className="text-xs">NIM</h3>
                       <p className="text-xl">{members[selectedIndex].nim}</p>
                     </div>
                   </div>
+
                   <div>
-                    <h3 className="text-xs">Motto Hidup</h3>
-                    <p className="text-xl mb-5">{members[selectedIndex].motto}</p>
-                    <h3 className="text-xs">Tujuan S.M.A.R.T.</h3>
-                    <p className="text-xl">{members[selectedIndex].tujuan}</p>
+                    {members[selectedIndex].motto !== "-" && (
+                      <>
+                        <h3 className="text-xs">Motto Hidup</h3>
+                        <p className="text-xl mb-5">{members[selectedIndex].motto}</p>
+                      </>
+                    )}
+
+                    {members[selectedIndex].tujuan !== "-" && (
+                      <>
+                        <h3 className="text-xs">Tujuan S.M.A.R.T.</h3>
+                        <p className="text-xl">{members[selectedIndex].tujuan}</p>
+                      </>
+                    )}
                   </div>
+
 
                   {/* Navigation buttons */}
                   <div className="absolute top-0 bottom-0 -left-10 flex">
@@ -974,9 +991,7 @@ const openModalMonitor = (event) => {
                 viewport={{ once: true, amount: 0.2 }}
                 style={{ fontFamily: "Clarendon, serif" }}
                 onClick={() => item.status === "completed" && openModalMonitor(item)}
-                className={`relative py-5 flex items-start  ${
-                  item.status !== "completed" ? "" : "cursor-pointer group"
-                }`}
+                className={`relative py-5 flex items-start  ${item.status !== "completed" ? "" : "cursor-pointer group"}`}
               >
                 {/* Vertical line with grow animation */}
                 {i < timeline.length - 1 && (
@@ -985,7 +1000,7 @@ const openModalMonitor = (event) => {
                     whileInView={{ scaleY: 1 }}
                     transition={{ duration: 0.6, delay: i * 0.5 }}
                     viewport={{ once: true, amount: 0.2 }}
-                    className={`absolute left-[11px] top-14 w-[2px] h-full origin-top
+                    className={`absolute left-[11px] top-17 w-[2px] h-full origin-top
                       ${
                         item.status === "completed"
                           ? "bg-white"
@@ -996,11 +1011,11 @@ const openModalMonitor = (event) => {
 
                 {/* Circle */}
                 <div
-                  className={`mt-3 w-6 h-6 rounded-full shrink-0 ${statusCircle[item.status]}`}
+                  className={`mt-6 w-6 h-6 rounded-full shrink-0 ${statusCircle[item.status]}`}
                 ></div>
 
                 {/* Content */}
-                <div className="ml-6 transition-all group-hover:outline group-hover:outline-offset-2 p-2 rounded-sm">
+                <div className={`ml-6 transition-all  group-hover:text-black group-hover:bg-white p-2 rounded-sm ${item.status !== "completed" ? "" : "border-2 border-white"}`}>
                   <div className="text-xl">{item.event}</div>
                   <p className="text-sm">{item.date}</p>
                 </div>
