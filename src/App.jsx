@@ -8,6 +8,7 @@ import graydonHoare from './assets/graydon_hoare.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import photoFathur from "./assets/members/fathur.jpg";
 import photoAhsan from "./assets/members/ahsan.jpg";
 import photoNailaA from "./assets/members/nailaA.jpg";
 import photoIbham from "./assets/members/ibham.jpg";
@@ -165,7 +166,7 @@ const variants = {
       nim: "1257050081",
       motto: "Akan selalu ada dan berliipat ganda.",
       tujuan: "-",
-      photo: "/assets/members/member2.jpg",
+      photo: photoFathur,
     },
     {
       id: "#L9",
