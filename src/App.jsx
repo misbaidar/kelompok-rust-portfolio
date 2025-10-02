@@ -8,6 +8,7 @@ import graydonHoare from './assets/graydon_hoare.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import photoNailaS from "./assets/members/nailaS.jpg";
 import photoAhsan from "./assets/members/ahsan.jpg";
 import photoNailaA from "./assets/members/nailaA.jpg";
 import photoIbham from "./assets/members/ibham.jpg";
@@ -15,10 +16,20 @@ import photoShafira from "./assets/members/shafira.jpg";
 import photoFazan from "./assets/members/fazan.jpg";
 import photoMisbah from "./assets/members/misbah.jpg";
 import img1 from "./assets/images/1.jpg";
-import img2 from "./assets/images/2.png";
+import img2 from "./assets/images/2.jpg";
 import img3 from "./assets/images/3.jpg";
-import img4 from "./assets/images/4.png";
+import img4 from "./assets/images/4.jpg";
 import img5 from "./assets/images/5.jpg";
+import img6 from "./assets/images/6.jpg";
+import img7 from "./assets/images/7.jpg";
+import img8 from "./assets/images/8.jpg";
+import img9 from "./assets/images/9.jpg";
+import img10 from "./assets/images/10.jpg";
+import img11 from "./assets/images/11.jpg";
+import img12 from "./assets/images/12.jpg";
+import img13 from "./assets/images/13.jpg";
+import img14 from "./assets/images/14.jpg";
+import img15 from "./assets/images/15.jpg";
 
 
 function GearDivider() {
@@ -124,8 +135,8 @@ const variants = {
       nama: "Naila Shafwah Ramadhan",
       nim: "1257050054",
       motto: "Setiap ada kesulitan pasti ada kemudahan.",
-      tujuan: "Menguasai front-end development.",
-      photo: "/assets/members/member2.jpg",
+      tujuan: "Saya ingin mengikuti AISEEC dan menerapkan SDGs sebagai next project untuk web saya dalam kurun waktu 1 tahun",
+      photo: photoNailaS,
     },
     {
       id: "#L4",
@@ -257,6 +268,16 @@ const openModalMonitor = (event) => {
     { id: 3, src: img3, caption: "Caption for Photo 3" },
     { id: 4, src: img4, caption: "Caption for Photo 4" },
     { id: 5, src: img5, caption: "Caption for Photo 5" },
+    { id: 6, src: img6, caption: "Caption for Photo 6" },
+    { id: 7, src: img7, caption: "Caption for Photo 7" },
+    { id: 8, src: img8, caption: "Caption for Photo 8" },
+    { id: 9, src: img9, caption: "Caption for Photo 9" },
+    { id: 10, src: img10, caption: "Caption for Photo 10" },
+    { id: 11, src: img11, caption: "Caption for Photo 11" },
+    { id: 12, src: img12, caption: "Caption for Photo 12" },
+    { id: 13, src: img13, caption: "Caption for Photo 13" },
+    { id: 14, src: img14, caption: "Caption for Photo 14" },
+    { id: 15, src: img15, caption: "Caption for Photo 15" },
   ];
   
   const [selected, setSelected] = useState(null);
@@ -538,52 +559,63 @@ const openModalMonitor = (event) => {
           transition={{ duration: 0.5, ease: "easeInOut" }}
           viewport={{ once: true }}
         >
-          <header>
-            <h2 className="text-3xl text-center mb-6">Monitor 2k25</h2>
+          <header className="text-center">
+            <h2 className="text-3xl text-center mb-2">MONITOR 2025</h2>
+            <p className="text-md text-gray-400 text-center mb-10" style={{ fontFamily: "Clarendon, serif" }}>(MASA ORIENTASI MAHASISWA TEKNIK INFORMATIKA 2025)</p>
           </header>
         </Motion.div>
-        <div className="relative pl-6">
-          {timeline.map((item, i) => (
-            <Motion.div
-              key={i}
-              initial={{ opacity: 0, y: -50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: i * 0.2 }}
-              viewport={{ once: true, amount: 0.2 }}
-              style={{ fontFamily: "Clarendon, serif" }}
-              onClick={() => item.status === "completed" && openModalMonitor(item)}
-              className={`relative py-5 flex items-start  ${
-                item.status !== "completed" ? "" : "cursor-pointer group"
-              }`}
-            >
-              {/* Vertical line with grow animation */}
-              {i < timeline.length - 1 && (
-                <Motion.div
-                  initial={{ scaleY: 0 }}
-                  whileInView={{ scaleY: 1 }}
-                  transition={{ duration: 0.6, delay: i * 0.5 }}
-                  viewport={{ once: true, amount: 0.2 }}
-                  className={`absolute left-[11px] top-14 w-[2px] h-full origin-top
-                    ${
-                      item.status === "completed"
-                        ? "bg-white"
-                        : "border-l-2 border-dashed border-white"
-                    }`}
-                ></Motion.div>
-              )}
+        <div className="flex w-4xl gap-6 items-center">
+        <Motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+          viewport={{ once: true }}
+        >        
+        <p className="text-xl w-xl text-center mb-20" style={{ fontFamily: "Clarendon, serif" }}>"Membentuk mahasiswa Teknik Informatika yang SAKTI dan berdaya saing dalam menjawab distrupsi digital di era society 5.0"</p>
+        </Motion.div>
+          <div className="relative pl-6">
+            {timeline.map((item, i) => (
+              <Motion.div
+                key={i}
+                initial={{ opacity: 0, y: -50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: i * 0.2 }}
+                viewport={{ once: true, amount: 0.2 }}
+                style={{ fontFamily: "Clarendon, serif" }}
+                onClick={() => item.status === "completed" && openModalMonitor(item)}
+                className={`relative py-5 flex items-start  ${
+                  item.status !== "completed" ? "" : "cursor-pointer group"
+                }`}
+              >
+                {/* Vertical line with grow animation */}
+                {i < timeline.length - 1 && (
+                  <Motion.div
+                    initial={{ scaleY: 0 }}
+                    whileInView={{ scaleY: 1 }}
+                    transition={{ duration: 0.6, delay: i * 0.5 }}
+                    viewport={{ once: true, amount: 0.2 }}
+                    className={`absolute left-[11px] top-14 w-[2px] h-full origin-top
+                      ${
+                        item.status === "completed"
+                          ? "bg-white"
+                          : "border-l-2 border-dashed border-white"
+                      }`}
+                  ></Motion.div>
+                )}
 
-              {/* Circle */}
-              <div
-                className={`mt-3 w-6 h-6 rounded-full shrink-0 ${statusCircle[item.status]}`}
-              ></div>
+                {/* Circle */}
+                <div
+                  className={`mt-3 w-6 h-6 rounded-full shrink-0 ${statusCircle[item.status]}`}
+                ></div>
 
-              {/* Content */}
-              <div className="ml-6 transition-all group-hover:outline group-hover:outline-offset-2 p-2 rounded-sm">
-                <div className="text-xl">{item.event}</div>
-                <p className="text-sm">{item.date}</p>
-              </div>
-            </Motion.div>
-          ))}
+                {/* Content */}
+                <div className="ml-6 transition-all group-hover:outline group-hover:outline-offset-2 p-2 rounded-sm">
+                  <div className="text-xl">{item.event}</div>
+                  <p className="text-sm">{item.date}</p>
+                </div>
+              </Motion.div>
+            ))}
+          </div>
         </div>
         <AnimatePresence>
           {selectedEvent && (
@@ -606,15 +638,15 @@ const openModalMonitor = (event) => {
                 <h2 className="text-2xl">{selectedEvent.event}</h2>
                 <p className="text-sm mb-6">{selectedEvent.date}</p>
                 {/* Subject navigation buttons */}
-                <div className="flex gap-2 justify-center mb-6">
+                <div className="flex justify-left border-b-2 mb-6">
                   {selectedEvent.subjects.map((_, idx) => (
                     <button
                       key={idx}
                       onClick={() => setSubjectIndex(idx)}
-                      className={`px-3 py-1 rounded ${
+                      className={`px-3 py-1 ${
                         subjectIndex === idx
                           ? "bg-black text-white"
-                          : "bg-gray-200 text-black"
+                          : "bg-white text-black cursor-pointer hover:bg-gray-200"
                       }`}
                     >
                       Materi {idx + 1}
@@ -666,32 +698,30 @@ const openModalMonitor = (event) => {
         </Motion.div>
 
         {/* Grid of photos */}
-        <div className="flex justify-center columns-4 gap-4 mt-8">
-          <Motion.div
-            variants={container}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ amount: 0.2 }} 
-            className="columns-4 gap-4"
-          >
-            {photos.map((p) => (
-              <Motion.div
-                key={p.id}
-                layoutId={`photo-${p.id}`}
-                variants={item}
-                onClick={() => setSelected(p)}
-                className="mb-4 cursor-pointer break-inside-avoid"
-              >
-                <Motion.img
-                  src={p.src}
-                  alt=""
-                  className="w-60 h-auto rounded-md"
-                />
-              </Motion.div>
-            ))}
-          </Motion.div>
-        </div>
-        
+        <Motion.div
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ amount: 0.2 }} 
+          className="columns-4 gap-4"
+        >
+          {photos.map((p) => (
+            <Motion.div
+              key={p.id}
+              layoutId={`photo-${p.id}`}
+              variants={item}
+              onClick={() => setSelected(p)}
+              className="mb-4 cursor-pointer break-inside-avoid"
+            >
+              <Motion.img
+                src={p.src}
+                alt=""
+                className="w-60 h-auto rounded-md"
+              />
+            </Motion.div>
+          ))}
+        </Motion.div>
+
         {/* Modal */}
         <AnimatePresence>
           {selected && (
