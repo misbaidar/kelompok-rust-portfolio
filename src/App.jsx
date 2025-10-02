@@ -8,8 +8,9 @@ import graydonHoare from './assets/graydon_hoare.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
-import photoAhsan from "./assets/members/ahsan.jpg";
+import photoWijdan from "./assets/members/wijdan.jpg";
 import photoFathur from "./assets/members/fathur.jpg";
+import photoAhsan from "./assets/members/ahsan.jpg";
 import photoNailaS from "./assets/members/nailaS.jpg";
 import photoNailaA from "./assets/members/nailaA.jpg";
 import photoIbham from "./assets/members/ibham.jpg";
@@ -151,11 +152,11 @@ const variants = {
     },
     {
       id: "#L5",
-      nama: "Member 5",
-      nim: "987654321",
-      motto: "Hidup sederhana.",
-      tujuan: "Menguasai front-end development.",
-      photo: "/assets/members/member2.jpg",
+      nama: "Wijdan Al Shafa Santosa",
+      nim: "1257050088",
+      motto: "Jangan katakan tidak bisa jika tidak mencoba.",
+      tujuan: "-",
+      photo: photoWijdan,
     },
     {
       id: "#L6",
