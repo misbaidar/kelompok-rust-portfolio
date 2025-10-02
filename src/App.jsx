@@ -161,10 +161,10 @@ const variants = {
     },
     {
       id: "#L8",
-      nama: "Member 8",
-      nim: "987654321",
-      motto: "Hidup sederhana.",
-      tujuan: "Menguasai front-end development.",
+      nama: "Fathur Hapiz Zulfikar",
+      nim: "1257050081",
+      motto: "Akan selalu ada dan berliipat ganda.",
+      tujuan: "-",
       photo: "/assets/members/member2.jpg",
     },
     {
