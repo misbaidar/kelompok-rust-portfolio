@@ -29,3 +29,7 @@ body {
 .animate-pulse-outline {
   animation: pulseOutline 2s infinite ease-in-out;
 }
+
+html {
+  scroll-behavior: smooth;
+}

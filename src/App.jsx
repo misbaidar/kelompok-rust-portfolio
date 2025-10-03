@@ -645,21 +645,21 @@ const openModalMonitor = (event) => {
   };
 
   const photos = [
-    { id: 1, src: img1, caption: "Caption for Photo 1" },
-    { id: 2, src: img2, caption: "Caption for Photo 2" },
-    { id: 3, src: img3, caption: "Caption for Photo 3" },
-    { id: 4, src: img4, caption: "Caption for Photo 4" },
-    { id: 5, src: img5, caption: "Caption for Photo 5" },
-    { id: 6, src: img6, caption: "Caption for Photo 6" },
-    { id: 7, src: img7, caption: "Caption for Photo 7" },
-    { id: 8, src: img8, caption: "Caption for Photo 8" },
-    { id: 9, src: img9, caption: "Caption for Photo 9" },
-    { id: 10, src: img10, caption: "Caption for Photo 10" },
-    { id: 11, src: img11, caption: "Caption for Photo 11" },
-    { id: 12, src: img12, caption: "Caption for Photo 12" },
-    { id: 13, src: img13, caption: "Caption for Photo 13" },
-    { id: 14, src: img14, caption: "Caption for Photo 14" },
-    { id: 15, src: img15, caption: "Caption for Photo 15" },
+    { id: 1, src: img1, caption: "Pengenalan kelompok mentoring" },
+    { id: 2, src: img2, caption: "Pengenalan kelompok mentoring" },
+    { id: 3, src: img3, caption: "Diskusi tugas denah" },
+    { id: 4, src: img4, caption: "Pengerjaan tugas denah" },
+    { id: 5, src: img5, caption: "Pengerjaan tugas denah" },
+    { id: 6, src: img6, caption: "Pengerjaan tugas denah" },
+    { id: 7, src: img7, caption: "Presentasi tugas denah" },
+    { id: 8, src: img8, caption: "Presentasi tugas denah" },
+    { id: 9, src: img9, caption: "Presentasi tugas denah" },
+    { id: 10, src: img10, caption: "Mentoring mabim 2" },
+    { id: 11, src: img11, caption: "Mentoring mabim 2" },
+    { id: 12, src: img12, caption: "FGD" },
+    { id: 13, src: img13, caption: "FGD" },
+    { id: 14, src: img14, caption: "After mabim 2" },
+    { id: 15, src: img15, caption: "After mabim 2" },
   ];
   
   const [selected, setSelected] = useState(null);
@@ -736,11 +736,11 @@ const openModalMonitor = (event) => {
 
           <div style={{ fontFamily: "Clarendon, serif" }} className="text-justify space-y-4">
             <p>
-              Seorang pengembang perangkat lunak Graydon Hoare menciptakan Rust pada 
+              Graydon Hoare, seorang pengembang perangkat lunak, menciptakan Rust pada 
               tahun 2006 saat bekerja di Mozilla Research, yang secara resmi 
               mensponsori proyek tersebut pada tahun 2009. 
               Rilis stabil pertamanya, Rust 1.0, diterbitkan pada Mei 2015. 
-              Setelah PHK karyawan Mozilla pada Agustus 2020, empat perusahaan 
+              Setelah Mozilla melakukan PHK masif pada Agustus 2020, empat perusahaan 
               lain bergabung dengan Mozilla dalam mensponsori Rust melalui 
               pembentukan Rust Foundation pada Februari 2021. 
             </p>
