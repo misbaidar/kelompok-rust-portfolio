@@ -1034,7 +1034,7 @@ const openModalMonitor = (event) => {
               style={{ fontFamily: "Clarendon, serif" }}
             >
               <Motion.div
-                className="bg-white text-black rounded-lg p-8 w-[700px] h-screen overflow-x-hidden overflow-y-auto relative"
+                className="bg-white text-black rounded-lg p-8 w-6xl h-screen overflow-x-hidden overflow-y-auto relative"
                 initial={{ scale: 0.9, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0.9, opacity: 0 }}
@@ -1077,7 +1077,7 @@ const openModalMonitor = (event) => {
                     <img
                       src={selectedEvent.subjects[subjectIndex].photo}
                       alt={selectedEvent.subjects[subjectIndex].title}
-                      className="w-full h-60 object-cover rounded-md mb-4"
+                      className="w-full h-96 object-cover rounded-md mb-4"
                     />
                     <p className="mb-4">
                       {selectedEvent.subjects[subjectIndex].summary}
